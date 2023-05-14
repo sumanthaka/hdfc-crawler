@@ -15,7 +15,7 @@ This is a web scraping project that extracts information about credit card produ
 3. Run the spider:
 `run`  
 
-This will scrape the HDFC Bank website, extract the credit card information, and save it to a CSV file named `cards.csv`.
+This will scrape the HDFC Bank website, extract the credit card information, and save it to a CSV file named `creditcard.csv`.
 
 ## Output
 The spider will extract the following information for each credit card:
