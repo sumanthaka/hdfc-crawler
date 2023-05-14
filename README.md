@@ -7,16 +7,13 @@ This is a web scraping project that extracts information about credit card produ
 
 ## Usage
 1. Clone the repository:
-`git clone https://github.com/your-username/web-scraping-with-scrapy.git`
+`git clone https://github.com/sumanthaka/hdfc-crawler.git`
 
 2. Navigate to the project directory:
-`cd web-scraping-with-scrapy`
+`cd hdfc-crawler`
 
-3. Install the dependencies:
-`pip install -r requirements.txt`
-
-4. Run the spider:
-`scrapy crawl cardspider`  
+3. Run the spider:
+`run`  
 
 This will scrape the HDFC Bank website, extract the credit card information, and save it to a CSV file named `cards.csv`.
 
