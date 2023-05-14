@@ -4,7 +4,6 @@ This is a web scraping project that extracts information about credit card produ
 ## Requirements
 - Python 3.x
 - Scrapy
-- Pandas
 
 ## Usage
 1. Clone the repository:
