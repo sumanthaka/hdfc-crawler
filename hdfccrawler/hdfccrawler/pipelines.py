@@ -10,9 +10,11 @@ import unidecode
 
 
 class HdfccrawlerPipeline:
+    # Process item here
     def process_item(self, item, spider):
         adapter = ItemAdapter(item)
 
+        # Convert list to string
         fields = adapter.field_names()
         for field in fields:
             if field != 'reward':
@@ -20,6 +22,7 @@ class HdfccrawlerPipeline:
                 if type(value) == list:
                     adapter[field] = " ".join(value)
 
+        # Convert reward to per 100 spent
         value = adapter.get("reward")
         if value != 'NA':
             if value[1] != 100:
@@ -28,6 +31,7 @@ class HdfccrawlerPipeline:
                 value[0] *= 100
             adapter["reward"] = value[0]
 
+        # Remove trailing spaces and convert to ascii
         fields = ['lounge', "milestone", "fees"]
         for field in fields:
             value = adapter.get(field)
